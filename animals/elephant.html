@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voi</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        p {
+            line-height: 1.6;
+            font-size: 16px;
+        }
+        h2 {
+            margin-top: 0;
+            color: #2980b9;
+        }
+        .content-table {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-spacing: 30px;
+            border-collapse: separate;
+        }
+        .image-cell {
+            width: 40%;
+            vertical-align: top;
+        }
+        .text-cell {
+            width: 60%;
+            vertical-align: top;
+        }
+        .animal-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        @media (max-width: 768px) {
+            .content-table {
+                padding: 20px;
+                border-spacing: 0;
+            }
+            .content-table tr, .image-cell, .text-cell {
+                display: block;
+                width: 100%;
+            }
+            .image-cell {
+                margin-bottom: 20px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <table class="content-table">
+        <tr>
+            <td colspan="2">
+                <h1>Voi (Loxodonta)</h1>
+            </td>
+        </tr>
+        <tr>
+            <td class="image-cell">
+                <img src="../pic/ele.png" alt="Voi" class="animal-image">
+            </td>
+            <td class="text-cell">
+                <h2>Mô tả chung</h2>
+                <p>
+                    Voi là động vật có vú trên cạn lớn nhất thế giới, được nhận biết bởi chiếc vòi dài, đôi tai lớn và ngà. Chúng là loài động vật ăn cỏ, dành phần lớn thời gian trong ngày để tìm kiếm thức ăn.
+                </p>
+                
+                <h2>Đời sống xã hội</h2>
+                <p>
+                    Voi sống trong các đơn vị gia đình mẫu hệ phức tạp. Chúng rất thông minh, có trí nhớ lâu dài và giao tiếp với nhau bằng nhiều loại âm thanh, một số trong đó có tần số quá thấp để con người có thể nghe thấy.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center; padding-bottom: 20px;">
+                <p>Tìm hiểu thêm về Voi trên <a href="https://en.wikipedia.org/wiki/Elephant" target="_blank" style="color: #0056b3; text-decoration: none;">Wikipedia</a>.</p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <a href="../index.html" class="back-button">
+                    Quay lại trang chủ
+                </a>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

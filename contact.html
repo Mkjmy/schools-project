@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ</title>
+    <link rel="stylesheet" href="contact-style.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1>Liên Hệ Với Chúng Tôi</h1>
+        
+        <form action="#" method="POST">
+            <h3>Thông tin của bạn</h3>
+            <p>
+                <label for="name">Họ và Tên</label>
+                <input type="text" id="name" name="name" required>
+            </p>
+            <p>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </p>
+            
+            <hr>
+
+            <h3>Lý do liên hệ</h3>
+            <p class="radio-group">
+                <input type="radio" id="reason-general" name="reason" value="general" checked>
+                <label for="reason-general">Hỏi đáp chung</label>
+            </p>
+            <p class="radio-group">
+                <input type="radio" id="reason-support" name="reason" value="support">
+                <label for="reason-support">Hỗ trợ kỹ thuật</label>
+            </p>
+            <p class="radio-group">
+                <input type="radio" id="reason-feedback" name="reason" value="feedback">
+                <label for="reason-feedback">Góp ý</label>
+            </p>
+
+            <hr>
+
+            <h3>Nội dung</h3>
+            <p>
+                <label for="message">Tin nhắn của bạn</label>
+                <textarea id="message" name="message" required></textarea>
+            </p>
+            <p class="checkbox-group">
+                <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                <label for="newsletter">Tôi muốn nhận bản tin hàng tháng</label>
+            </p>
+            
+            <hr>
+
+            <button type="submit" class="submit-button">Gửi Tin Nhắn</button>
+        </form>
+
+        <a href="index.html" class="back-button">
+            Quay lại trang chủ
+        </a>
+    </main>
+
+</body>
+</html>

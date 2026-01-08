@@ -1,0 +1,162 @@
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+header {
+    text-align: center;
+}
+header .banner-image {
+    width: 100%;
+    height: auto;
+}
+header h1 {
+    margin: 10px 0;
+    font-size: 36px;
+    color: #333;
+}
+main {
+    padding: 20px;
+}
+main h2, main h3 {
+    text-align: center;
+    color: #2c3e50;
+}
+main > p {
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.banner-video {
+    width: 100%;
+    max-width: 1200px; 
+    display: block;
+    margin: 30px auto;
+    border-radius: 8px;
+    height: auto; 
+}
+
+
+.animal-grid {
+    width: 100%;
+    max-width: 1200px;
+    margin: 30px auto 0 auto;
+    border-spacing: 20px;
+    border-collapse: separate;
+}
+.animal-grid-cell {
+    width: 50%;
+    vertical-align: top;
+    padding: 0;
+}
+.animal-card-link {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease;
+    background-color: #f8f9fa;
+}
+.animal-card-link:hover {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+.animal-card {
+    width: 100%;
+    border-spacing: 0;
+}
+.animal-card td {
+    vertical-align: top;
+}
+
+.animal-card img {
+    display: block; 
+    width: 250px; 
+    height: 250px; 
+    object-fit: cover; 
+    margin: 0 auto; 
+}
+.animal-card-info {
+    padding: 20px;
+}
+.animal-card-info h4 {
+    margin: 0 0 10px 0;
+    font-size: 24px;
+    color: #0056b3;
+}
+.animal-card-info p {
+    text-align: left;
+    margin: 0 0 12px 0;
+    font-size: 16px;
+}
+.animal-card-info .details-text {
+    margin: 15px 0 0 0;
+    font-size: 14px;
+    color: #6c757d;
+    font-style: italic;
+}
+
+
+.footer-section {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    border-top: 5px solid #222;
+}
+
+.footer-section p {
+    margin: 5px 0;
+}
+
+.footer-section a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+    main {
+        padding: 10px;
+    }
+    .animal-grid {
+        border-spacing: 10px;
+    }
+    .animal-grid tr, .animal-grid-cell {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .animal-card td {
+        display: block;
+        width: 100%;
+    }
+    .animal-card img {
+        width: 100%; 
+        height: auto; 
+        aspect-ratio: 1 / 1; 
+        object-fit: cover; 
+        margin: 0 auto; 
+    }
+    .animal-card-info h4 {
+        font-size: 20px;
+    }
+    .animal-card-info p {
+        font-size: 14px;
+    }
+}
