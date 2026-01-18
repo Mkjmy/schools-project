@@ -1,0 +1,216 @@
+/* --- General & Typography --- */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #FFFFFF; /* Light background */
+    color: #333333; /* Dark gray for text */
+    line-height: 1.7; /* Increased line height for readability */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* --- Header --- */
+.site-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    padding: 10px 5%;
+    text-align: center;
+}
+
+.header-banner {
+    width: 100%;
+    max-height: 150px; /* Control the height of the banner */
+    object-fit: cover; /* Crop the image to fit without distortion */
+    margin-bottom: 10px;
+}
+
+.site-title {
+    font-size: 2.5em; /* Big, bold title */
+    font-weight: 900;
+    margin: 0;
+    color: #000000;
+}
+
+.main-nav-list {
+    margin: 10px 0 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.main-nav-list a {
+    font-weight: 600;
+    color: #495057;
+    padding: 5px 10px;
+}
+
+.main-nav a:hover {
+    color: #0056b3;
+}
+
+
+/* --- Featured Article (Video) --- */
+.featured-article {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.featured-header .featured-title {
+    font-size: 2.2em;
+    margin: 20px 0 10px;
+}
+
+.featured-header .sapo {
+    font-size: 1.1em;
+    color: #6c757d;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+.featured-video {
+    width: 100%;
+    max-width: 900px;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #e9ecef;
+}
+
+/* --- Animal Grid --- */
+.animal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #dee2e6;
+}
+
+.animal-card {
+    display: block;
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.animal-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.animal-card img {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Make image square */
+    object-fit: cover;
+    display: block;
+}
+
+.animal-card .animal-name {
+    font-size: 1.4em;
+    font-weight: 700;
+    margin: 15px 15px 5px;
+    color: #212529;
+}
+
+.animal-card .animal-desc {
+    font-size: 1em;
+    margin: 0 15px 15px;
+    color: #495057;
+}
+
+.animal-card .details-text {
+    font-size: 0.9em;
+    color: #6c757d; /* Gray color */
+    font-style: italic; /* Faded/mo appearance */
+    margin: 0 15px 15px; /* Adjust margin */
+    text-align: right; /* Align to the right for a subtle call to action */
+}
+
+/* --- Footer --- */
+.site-footer-main {
+    background-color: #343a40;
+    color: #f8f9fa;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
+
+.site-footer-main p {
+
+    margin: 5px 0;
+
+}
+
+
+
+/* --- Animal Categories Links --- */
+
+.animal-categories-links {
+
+    text-align: center;
+
+    margin: 40px 0;
+
+}
+
+
+
+.category-links {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.category-link-btn {
+
+    font-size: 1.1em;
+
+    font-weight: 600;
+
+    color: #fff;
+
+    background-color: #007bff;
+
+    border: none;
+
+    border-radius: 4px;
+
+    padding: 10px 20px;
+
+    cursor: pointer;
+
+    transition: background-color 0.2s ease;
+
+    text-decoration: none; /* Remove underline from links */
+
+    display: inline-block; /* Allow padding and sizing */
+
+}
+
+
+
+.category-link-btn:hover {
+
+    background-color: #0056b3;
+
+}

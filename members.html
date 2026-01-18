@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới Thiệu Thành Viên</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .members-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        .members-table th, .members-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        .members-table th {
+            background-color: #f2f2f2;
+            color: #555;
+        }
+        .members-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            background-color: #6c757d;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+                margin: 10px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            .members-table, .members-table tbody, .members-table th, .members-table td, .members-table tr {
+                display: block;
+            }
+            .members-table thead {
+                display: none;
+            }
+            .members-table tr {
+                margin-bottom: 15px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                overflow: hidden;
+            }
+            .members-table td {
+                text-align: right;
+                padding-left: 50%;
+                position: relative;
+            }
+            .members-table td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 10px;
+                width: calc(50% - 20px);
+                padding-right: 10px;
+                white-space: nowrap;
+                text-align: left;
+                font-weight: bold;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <main class="container">
+        <h1>Giới Thiệu Thành Viên</h1>
+        
+        <table class="members-table">
+            <thead>
+                <tr>
+                    <th>Họ và Tên</th>
+                    <th>STT</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Họ và Tên">Đỗ Ngọc Xuân Hương</td>
+                    <td data-label="STT">10</td>
+                </tr>
+                <tr>
+                    <td data-label="Họ và Tên">Nguyễn Ngọc Minh</td>
+                    <td data-label="STT">16</td>
+                </tr>
+                <tr>
+                    <td data-label="Họ và Tên">Võ Minh Khang</td>
+                    <td data-label="STT">11</td>
+                </tr>
+                <tr>
+                    <td data-label="Họ và Tên">Nguyễn Hoàng Nam</td>
+                    <td data-label="STT">18</td>
+                </tr>
+                <tr>
+                    <td data-label="Họ và Tên">Lê Ngọc Thiên Ngân</td>
+                    <td data-label="STT">20</td>
+                </tr>
+                <tr>
+                    <td data-label="Họ và Tên">Nguyễn Ngọc Bảo Nhi</td>
+                    <td data-label="STT">27</td>
+                </tr>
+                <tr>
+                    <td data-label="Họ và Tên">Vũ Trường Thành</td>
+                    <td data-label="STT">35</td>
+                </tr>
+                <tr>
+                    <td data-label="Họ và Tên">Nguyễn Hoàng Anh Thư</td>
+                    <td data-label="STT">38</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <a href="index.html" class="back-button">
+            Quay lại trang chủ
+        </a>
+    </main>
+
+</body>
+</html>
