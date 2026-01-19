@@ -1,4 +1,10 @@
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -56,102 +62,260 @@ main {
 }
 
 .main-nav a:hover {
+
     color: #0056b3;
+
 }
+
+
+
+/* Category Navigation */
+
+.category-nav {
+
+    margin-top: 15px;
+
+}
+
+
+
+.category-nav-list {
+
+    margin: 0;
+
+    padding: 0;
+
+    list-style: none;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+}
+
+
+
+.category-nav-list a {
+
+    font-weight: 500;
+
+    font-size: 0.95em;
+
+    color: #495057;
+
+    background-color: #e9ecef;
+
+    padding: 6px 12px;
+
+    border-radius: 4px;
+
+    transition: background-color 0.2s ease, color 0.2s ease;
+
+}
+
+
+
+.category-nav-list a:hover {
+
+    background-color: #007bff;
+
+    color: #fff;
+
+}
+
+
+
+
 
 
 
 .featured-article {
+
     text-align: center;
+
     margin-bottom: 40px;
+
 }
+
+
 
 .featured-header .featured-title {
+
     font-size: 2.2em;
+
     margin: 20px 0 10px;
+
 }
+
+
 
 .featured-header .sapo {
+
     font-size: 1.1em;
+
     color: #6c757d;
+
     max-width: 800px;
+
     margin: 0 auto 20px;
+
 }
 
+
+
 .featured-video {
+
     width: 100%;
+
     max-width: 900px;
+
     display: block;
+
     margin: 0 auto;
+
     border: 1px solid #e9ecef;
+
 }
+
+
+
 
 
 .animal-grid {
+
     display: grid;
+
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+
     gap: 20px;
+
     padding-top: 20px;
+
     border-top: 1px solid #dee2e6;
+
 }
+
+
 
 .animal-card {
+
     display: block;
+
     background-color: #f8f9fa;
+
     border: 1px solid #e9ecef;
+
     border-radius: 4px;
+
     overflow: hidden;
+
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+
 }
+
+
 
 .animal-card:hover {
+
     transform: translateY(-5px);
+
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
 }
+
+
 
 .animal-card img {
+
     width: 100%;
+
     aspect-ratio: 1 / 1; 
+
     object-fit: cover;
+
     display: block;
+
 }
+
+
 
 .animal-card .animal-name {
+
     font-size: 1.4em;
+
     font-weight: 700;
+
     margin: 15px 15px 5px;
+
     color: #212529;
+
 }
+
+
 
 .animal-card .animal-desc {
+
     font-size: 1em;
+
     margin: 0 15px 15px;
+
     color: #495057;
+
 }
 
+
+
 .animal-card .details-text {
+
     font-size: 0.9em;
+
     color: #6c757d; 
+
     font-style: italic; 
+
     margin: 0 15px 15px; 
+
     text-align: right; 
+
 }
+
+
+
 
 
 .site-footer-main {
+
     background-color: #343a40;
+
     color: #f8f9fa;
+
     text-align: center;
+
     padding: 20px 10px;
+
     margin-top: 40px;
+
     font-size: 0.9em;
+
 }
+
+
 
 .site-footer-main p {
 
     margin: 5px 0;
 
 }
+
+
+
+
+
+
 
 
 
@@ -167,6 +331,10 @@ main {
 
 
 
+
+
+
+
 .category-links {
 
     display: flex;
@@ -178,6 +346,10 @@ main {
     margin-bottom: 20px;
 
 }
+
+
+
+
 
 
 
@@ -209,8 +381,36 @@ main {
 
 
 
+
+
+
+
 .category-link-btn:hover {
 
     background-color: #0056b3;
 
 }
+
+
+
+@media (max-width: 768px) {
+
+    .category-nav-list {
+
+        gap: 10px;
+
+    }
+
+    .category-nav-list a {
+
+        width: calc(50% - 5px);
+
+        text-align: center;
+
+        box-sizing: border-box;
+
+    }
+
+}
+
+
